@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css" charset="utf-8"/>-->
+    <title>GD50 v2 Pong</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="format-detection" content="telephone=no">
+    
+    <style>
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          image-rendering: optimizeSpeed;              /* Older versions of FF */
+          image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
+          image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
+          image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
+          image-rendering: crisp-edges;                /* Possible future browsers. */
+          -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
+          image-rendering: pixelated;                  /* Chrome 41 */
+        }
+        
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        @font-face {
+            font-family: "04b03regular";
+            src: url('assets/fonts/font.ttf');
+            font-weight: 400;
+            font-weight: normal;
+        }
+
+        .fontLoader {
+            position: absolute;
+            left: -1000px;
+            visibility: hidden;
+        }
+    </style>
+    
+    <!-- build of Phaser -->
+    <script src="phaser.js"></script>
+
+    <!-- our code -->
+    <script type="module" src="index.js"></script>
+</head>
+
+<body style="background-color: black;">
+    <div class="fontLoader" style='font-family: "04b03regular"';>-</div>
+    <div id="content" style="display: block; margin: auto; text-align: center"></div>
+</body>
