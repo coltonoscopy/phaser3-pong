@@ -7,12 +7,15 @@
  */
 
 import BootScene from './BootScene.js';
+import PlayScene from './PlayScene.js';
+import ServeScene from './ServeScene.js';
 import TitleScene from './TitleScene.js';
 
 let config = {
     type: Phaser.AUTO,
     width: 432,
     height: 243,
+    backgroundColor: '#282D34',
     physics: {
         default: 'arcade',
         arcade: {
@@ -21,7 +24,9 @@ let config = {
     },
     scene: [
         BootScene,
-        TitleScene
+        TitleScene,
+        ServeScene,
+        PlayScene
     ]
 };
 
